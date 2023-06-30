@@ -1,0 +1,138 @@
+.withdraw_page .deposit_info {
+    margin-top: 15px;
+}
+
+.withdraw_page__bottom {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.withdraw_page .withdraw_form {
+    max-width: 100%;
+}
+
+.withdraw_page_title {
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+}
+
+.withdraw_page_desrc {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.withdraw_page_desrc span {
+    text-decoration: underline;
+}
+
+.withdraw_page .withdraw_form label {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.withdraw_page .withdraw_form label select,
+.withdraw_page .withdraw_form label input {
+    max-width: 100%;
+
+}
+
+.withdraw_page .withdraw_form label p {
+    margin: 7px 0 0;
+    font-weight: 400;
+    font-size: 9.88px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #A6A9B3;
+}
+
+.withdraw_page .withdraw_form .choices[data-type*=select-one] {
+    width: 100%;
+    max-width: 100%;
+}
+
+.withdraw_page .withdraw_form .choices[data-type*=select-one] .choices__inner {
+    margin-top: 10px;
+    padding: 5px 21px;
+    background: rgba(24, 26, 37, 0.5);
+    border: 1px solid rgba(48, 50, 65, 0.5);
+    border-radius: 12px;
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    color: #A0A5BA;
+    text-transform: none;
+
+}
+
+.withdraw_page .withdraw_form .choices[data-type*=select-one]:after {
+    top: 36px;
+    left: auto;
+    right: 24px;
+    border: 0;
+    width: 7px;
+    height: 4px;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.30026 4.3L0.700256 1.7C0.383589 1.38333 0.312923 1.021 0.488256 0.613C0.66359 0.205 0.975923 0.000666667 1.42526 0H6.57526C7.02526 0 7.33792 0.204333 7.51326 0.613C7.68859 1.02167 7.61759 1.384 7.30026 1.7L4.70026 4.3C4.60026 4.4 4.49192 4.475 4.37526 4.525C4.25859 4.575 4.13359 4.6 4.00026 4.6C3.86692 4.6 3.74192 4.575 3.62526 4.525C3.50859 4.475 3.40026 4.4 3.30026 4.3Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-position: center;
+}
+
+.withdraw_page_amount_wrapper {
+    position: relative;
+}
+
+.withdraw_page_btn__amout {
+    position: absolute;
+    top: 60%;
+    right: 16px;
+    transform: translateY(-50%);
+    padding: 4px 11px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ACAEBE;
+    background: rgba(67, 70, 92, 0.3);
+    border-radius: 4px;
+}
+
+.withdraw_page_btn {
+    font-family: var(--font-montserrat);
+    margin-top: 50px;
+}
+
+@media screen and (max-width:767.98px) {
+    .withdraw_page__bottom{
+        margin-top: 30px;
+    }
+    .withdraw_page .deposit_info__item {
+        gap: 4px;
+    }
+
+    .withdraw_page_btn {
+        margin-top: 43px;
+    }
+
+    .withdraw_page_title {
+        font-size: 22px;
+        line-height: 130%;
+    }
+
+    .withdraw_page_desrc {
+        font-size: 12px;
+        line-height: 150%;
+    }
+}

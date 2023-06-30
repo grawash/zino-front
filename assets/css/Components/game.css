@@ -1,0 +1,115 @@
+.game_top {
+    padding: 44px 52px;
+    background: #1C1F2F;
+    border-radius: 30px;
+}
+
+.game_content {
+    display: flex;
+    align-items: center;
+}
+
+.game__title {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.game__items {
+    margin-top: 30px;
+}
+
+.game__item {
+    padding: 17px 19px;
+    display: flex;
+    flex-direction: column;
+    background: #171822;
+    border: 1px solid #303241;
+    border-radius: 12px;
+}
+
+.game_setings {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.game_seting {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #808792;
+    cursor: pointer;
+    transition: color  0.3s ease-in-out;
+}
+.game_bottom{
+    margin-top: 30px;
+}
+.game_seting svg path{
+    fill: #808792;
+    transition: fill  0.3s ease-in-out;
+}
+.game_seting:hover {
+    color: var(--font-color);
+}
+.game_seting:hover svg,
+.game_seting:hover svg path{
+    fill: var(--color-ping);
+}
+/* .game_favourite.active svg path{
+    fill: var(--color-ping);
+} */
+
+@media screen and (max-width:979.98px) {
+    .game_top {
+        padding: 40px 16px 30px;
+        border-radius: 15px;
+    }
+    .game__items{
+        margin-top: 40px;
+    }
+    .game_setings{
+        margin-top: 30px;
+        justify-content: space-between;
+        gap: 38px;
+    }
+    .game_seting {
+        gap: 5px;
+    }
+    .game_bottom{
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width:767.98px) {
+    .game_top{
+        padding: 0;
+        background-color: transparent;
+    }
+    .game__items .swiper-slide{
+        width: 250px;
+    }
+    .game__items{
+        margin-top: 20px;
+    }
+    .game_setings{
+        flex-direction: column;
+        margin-top: 25px;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .game__item {
+        padding: 15px 17px;
+    }
+    .game__item .slots_item__top img{
+        width: 28px;
+    }
+    .game__item .slots_item__bottom {
+        margin-top: 4px;
+    }
+}

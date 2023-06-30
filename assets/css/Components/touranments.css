@@ -1,0 +1,446 @@
+.wrapper.promos_page::after {
+    top: 12%;
+}
+
+/* Hero Touranments  */
+.hero_tournaments {
+    position: relative;
+    z-index: 10;
+}
+
+.hero_tournaments__wrapper {
+    position: relative;
+    height: 365px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.hero_tournaments__wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -o-linear-gradient(top, rgba(19, 13, 37, 0) 0%, rgba(19, 13, 37, 0.8) 46.95%, #130D25 100%), url(.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(19, 13, 37, 0)), color-stop(46.95%, rgba(19, 13, 37, 0.8)), to(#130D25)), url(.jpg);
+    background: linear-gradient(180deg, rgba(19, 13, 37, 0) 0%, rgba(19, 13, 37, 0.8) 46.95%, #130D25 100%), url(.jpg);
+
+}
+
+.hero_tournaments__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+}
+
+.hero_tournaments__content {
+    position: absolute;
+    left: 3%;
+    bottom: 15%;
+}
+
+.hero_tournaments__title {
+    gap: 15px;
+}
+
+.hero_tournaments__title img {
+    width: auto;
+}
+
+.hero_tournaments__text {
+    max-width: 584px;
+    margin-top: 15px;
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.hero_tournaments__btn.btn {
+    margin-top: 20px;
+    border-radius: 0;
+}
+
+/* Hero Touranments END */
+
+
+/* Section Touranments */
+
+.touranments_title {
+    gap: 10px;
+    justify-content: center;
+}
+
+.touranments_title::before {
+    content: '';
+    width: 34px;
+    height: 32px;
+    background-image: url("data:image/svg+xml,%3Csvg width='36' height='32' viewBox='0 0 36 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.1176 8C5.94592 8 2.54102 10.8312 2.54102 14.3V21.95C2.54102 24.1092 4.39386 26 6.87052 26C8.26863 26 9.41942 25.4417 10.2169 24.7273C11.0147 24.013 11.5501 23.1554 12.0328 22.3526C12.5155 21.5498 12.9501 20.7953 13.3729 20.3187C13.796 19.8422 14.0559 19.7 14.4468 19.7H20.9411C21.332 19.7 21.5919 19.8422 22.015 20.3187C22.438 20.7952 22.8724 21.5496 23.3551 22.3526C23.8379 23.1553 24.3735 24.0132 25.171 24.7273C25.9687 25.4417 27.1195 26 28.5174 26C30.9941 26 32.8469 24.1092 32.8469 21.95V14.3C32.8469 10.8312 29.442 8 25.2703 8H10.1176ZM9.03526 11.6H11.2V13.4H13.3648V15.2L11.2 15.1998V16.9998L9.03526 17V15.2L6.87052 15.1998V13.3998H9.03526V11.6ZM24.1885 11.6H26.3533V13.4H28.518V15.2L26.3533 15.1998V16.9998L24.1885 17V15.2L22.0238 15.1998V13.3998H24.1885V11.6ZM24.1885 13.3998V15.2L26.3533 15.1998V13.4L24.1885 13.3998Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.touranments_content {
+    margin-top: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.touranments_items {
+    margin-top: 50px;
+}
+
+.touranments_item:not(:last-child) {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.28);
+
+}
+
+.touranments_item_top {
+    gap: 20px;
+}
+
+.touranments_left,
+.touranments_right {
+    width: 50%;
+}
+
+.touranments_left {
+    position: relative;
+    height: 425px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.touranments_left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(19, 13, 37, 0) 0%, rgba(19, 13, 37, 0.8) 46.95%, #130D25 100%)
+}
+
+.touranments_left img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.touranments_left__content {
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: 5%;
+    font-family: var(--font-montserrat);
+}
+
+.touranments_left__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.touranments_left__desrc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    max-width: 584px;
+}
+
+.touranments_left__btn.btn {
+    margin-top: 36px;
+    display: flex;
+}
+
+.touranments_right {
+    font-family: var(--font-montserrat);
+}
+
+.touranments_right__prize {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    color: #DE9300;
+}
+
+.touranments_right__prize::before {
+    content: '';
+    width: 34px;
+    height: 32px;
+    background-image: url("data:image/svg+xml,%3Csvg width='35' height='32' viewBox='0 0 35 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_300_2315)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.6824 32C8.11764 32 0.364746 24.837 0.364746 16C0.364746 7.163 8.11764 0 17.6824 0C27.2471 0 35 7.163 35 16C35 24.837 27.2471 32 17.6824 32ZM24.7177 19.154C24.7177 16.631 23.0119 15.206 19.0213 14.318V9.878C20.2551 10.112 21.436 10.603 22.5909 11.374L24.0618 9.178C22.6129 8.19754 20.9112 7.58518 19.1263 7.402V6H16.8425V7.355C13.5608 7.589 11.3301 9.318 11.3301 11.841C11.3301 14.481 13.1149 15.766 16.9475 16.654V21.234C15.2406 21 13.8238 20.299 12.3269 19.224L10.6471 21.35C12.4452 22.6289 14.5876 23.4291 16.8425 23.664V26H19.1263V23.687C22.4599 23.43 24.7177 21.724 24.7177 19.154ZM16.9464 13.827C14.9256 13.29 14.4278 12.659 14.4278 11.677C14.4278 10.65 15.2936 9.832 16.9475 9.715L16.9464 13.827ZM21.62 19.317C21.62 20.439 20.6751 21.21 19.0213 21.327V17.098C21.0691 17.636 21.62 18.266 21.62 19.318V19.317Z' fill='%23DE9300'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_300_2315'%3E%3Crect width='34.6353' height='32' fill='white' transform='translate(0.364746)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.touranments_right__end {
+    display: inline-flex;
+    padding: 15px 42px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #FF4137;
+    background: #1C1F2F;
+    border-radius: 4px;
+}
+
+.touranments_right__content {
+    margin-top: 17px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+
+.touranments_bottom {
+    margin-top: 20px;
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 53px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.touranments_bottom__left,
+.touranments_bottom__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.touranments_bottom__item {
+    width: 100%;
+}
+
+.touranments_bottom__title {
+    padding-left: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 17px;
+}
+
+.touranments_bottom__table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 25px;
+    background: #1C1F2F;
+    border-radius: 4px;
+}
+
+.touranments_bottom__item:first-child .touranments_bottom__table::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 2px;
+    height: 35px;
+    right: -1px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.28);
+}
+
+.touranments_bottom__col {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.touranments_bottom__col span.green {
+    color: #1BB96B;
+}
+
+.touranments_bottom__col span.red {
+    color: #FF4137;
+}
+
+
+
+.touranments_right__timer {
+    margin-top: 20px;
+}
+
+.touranments_right__timer .running time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.touranments_right__timer timer,
+.touranments_right__timer .ended {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 50px;
+    grid-gap: 10px;
+}
+
+.tournament_grid_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.tournament_grid_item span:first-child {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    color: #D9D9D9;
+}
+
+.tournament_grid_item span:last-child {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+}
+
+.touranments_right__timer .labels {
+    font-size: 13px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.touranments_right__timer .separator {
+    align-self: center;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+/* Section Touranments END */
+
+@media screen and (max-width:979.98px) {
+    .hero_tournaments__wrapper {
+        height: 340px;
+    }
+
+    .hero_tournaments__title.title_h1 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .touranments_item:not(:last-child) {
+        margin-bottom: 30px;
+        padding-bottom: 60px;
+    }
+
+    .touranments_content {
+        max-width: 470px;
+        margin: 15px auto 0;
+    }
+
+    .touranments_item_top {
+        flex-direction: column;
+    }
+
+    .touranments_left__desrc {
+        font-size: 14px;
+        line-height: 17px;
+        max-width: 310px;
+    }
+
+    .touranments_left,
+    .touranments_right {
+        width: 100%;
+    }
+
+    .touranments_right__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .touranments_right__content {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .touranments_right__end,
+    .touranments_right__timer {
+        margin-top: 0;
+    }
+
+    .touranments_bottom {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .touranments_bottom__left,
+    .touranments_bottom__right {
+        gap: 10px;
+    }
+
+    .touranments_bottom__item:first-child .touranments_bottom__table::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    .hero_tournaments .hero_tournaments__container {
+        padding: 0;
+    }
+    .hero_tournaments__wrapper {
+        height: 375px;
+        border-radius: 0;
+    }
+
+    .hero_tournaments__content {
+        left: 9%;
+        right: 9%;
+        bottom: 15%;
+    }
+
+    .hero_tournaments__title.title_h1 {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .hero_tournaments__text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .touranments_right__top{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .touranments_bottom__left,
+    .touranments_bottom__right{
+        flex-direction: column;
+    }
+    .touranments_item:not(:last-child) {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .touranments_left{
+        border-radius: 0;
+    }
+    .touranments_left__content {
+        left: 6%;
+        right: 6%;
+        bottom: 5%;
+    }
+}

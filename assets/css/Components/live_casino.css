@@ -1,0 +1,245 @@
+.live_hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.live_hero>img {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.live_title {
+    margin-top: 20px;
+}
+
+.live_title img {
+    width: auto;
+}
+
+.live_subtitle {
+    margin-top: 18px;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+.live_filter {
+    margin-top: 20px;
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #1C1F2F;
+    border-radius: 4px;
+}
+
+
+.live_filter__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 19px 16px;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: rgba(76, 82, 116, 0.21);
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    color: var(--font-color);
+}
+
+.live_filter__item:hover {
+    background-color: rgba(239, 18, 151, 0.21);
+}
+
+.live_filter__item.active {
+    position: relative;
+    background: rgba(239, 18, 151, 0.21);
+    pointer-events: none;
+}
+
+.live_filter__item.active::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    padding: 1px;
+    background: linear-gradient(45deg, #EF129736, #EF1297);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+}
+
+.live_filter__item:not(:first-child) {
+    max-width: 230px;
+    width: 100%;
+}
+
+.slots_filter_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80px;
+    width: 100%;
+    padding: 17px;
+    margin-left: auto;
+    background: linear-gradient(180deg, #171822 0%, #171822 100%);
+    border: 1px solid #303241;
+    border-radius: 4px;
+    transition: border 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.slots_filter_search:hover {
+    border: 1px solid #3e3f49;
+}
+
+.dashboard__bottom {
+    margin-top: 40px;
+}
+
+.slots_bottom__title {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.slots_items__login {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-content: center;
+    row-gap: 30px;
+    column-gap: 15px;
+}
+
+.slots_item__login {
+    position: relative;
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+.slots_item__login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    filter: blur(30px);
+    border-radius: 4px;
+    z-index: -1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.slots_item__login:hover::before {
+    background-color: rgba(202, 28, 162, 0.5);
+}
+
+.slots_item__login img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.dashboard__filter .choices[data-type*=select-one] {
+    flex-shrink: 0;
+}
+
+.dashboard__btn.btn {
+    font-family: var(--font-montserrat);
+    display: flex;
+    max-width: 210px;
+    margin: 50px auto 0;
+    text-transform: uppercase;
+}
+
+.live_filter__slider .swiper-slide {
+    width: max-content;
+}
+
+.live_filte__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.live_filte__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    background: rgba(76, 82, 116, 0.21);
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 60px;
+    transition: all 0.3s ease-in-out;
+}
+.live_filte__arrow.swiper-button-disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.live_filte__arrow-prev {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width:979.98px) {
+    .live_hero picture img{
+        height: 325px;
+    } 
+    .dashboard__bottom{
+        margin-top: 17px;
+    }
+    .live_subtitle{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:767.98px) {
+    .live{
+        margin: 0;
+    }
+    .live  .live__container{
+        padding: 0;
+    }
+    .live_hero picture img{
+        height: 460px;
+        object-fit: cover;
+        object-position: right;
+    } 
+    .live_title{
+        margin-top: 15px;
+    }
+    .live_content{
+        padding: 0 12px;
+    }
+    .dashboard__bottom{
+        padding: 0 12px;
+    }
+    .slots_items__login{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 15px;
+    }
+    .live_filte__nav{
+        display: none;
+    }
+    
+}

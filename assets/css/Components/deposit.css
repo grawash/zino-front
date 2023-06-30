@@ -1,0 +1,315 @@
+.deposit_page__wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.deposit_page img {
+    width: auto;
+}
+
+.deposit_page_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.deposit_page_title {
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 130%;
+}
+
+.deposit_page_info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 17px;
+}
+
+.deposit_page_info__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #808792;
+    gap: 8px;
+}
+
+.deposit_page_info__item:nth-child(1)::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.08 12.08C3.76 11.56 4.52 11.1499 5.36 10.8496C6.2 10.5493 7.08 10.3995 8 10.4C8.92 10.4 9.8 10.5501 10.64 10.8504C11.48 11.1507 12.24 11.5605 12.92 12.08C13.3867 11.5333 13.7501 10.9133 14.0104 10.22C14.2707 9.52667 14.4005 8.78667 14.4 8C14.4 6.22667 13.7768 4.71653 12.5304 3.4696C11.284 2.22267 9.77387 1.59947 8 1.6C6.22667 1.6 4.71653 2.2232 3.4696 3.4696C2.22267 4.716 1.59947 6.22613 1.6 8C1.6 8.78667 1.73013 9.52667 1.9904 10.22C2.25067 10.9133 2.61387 11.5333 3.08 12.08ZM8 8.8C7.21333 8.8 6.54987 8.53013 6.0096 7.9904C5.46933 7.45067 5.19947 6.7872 5.2 6C5.2 5.21333 5.46987 4.54987 6.0096 4.0096C6.54933 3.46933 7.2128 3.19947 8 3.2C8.78667 3.2 9.45013 3.46987 9.9904 4.0096C10.5307 4.54933 10.8005 5.2128 10.8 6C10.8 6.78667 10.5301 7.45013 9.9904 7.9904C9.45067 8.53067 8.7872 8.80053 8 8.8ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9493 3.06 14.3795 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210667 10.1467 0.000533333 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05067 3.90667 1.62053 3.06 2.34 2.34C3.06 1.62 3.90667 1.05013 4.88 0.6304C5.85333 0.210667 6.89333 0.000533333 8 0C9.10667 0 10.1467 0.210133 11.12 0.6304C12.0933 1.05067 12.94 1.62053 13.66 2.34C14.38 3.06 14.9501 3.90667 15.3704 4.88C15.7907 5.85333 16.0005 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9493 12.0933 14.3795 12.94 13.66 13.66C12.94 14.38 12.0933 14.9501 11.12 15.3704C10.1467 15.7907 9.10667 16.0005 8 16Z' fill='%23808792'/%3E%3C/svg%3E%0A");
+}
+
+.deposit_page_info__item:nth-child(2)::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0664 5.33567C14.0297 5.33301 13.9891 5.33301 13.9464 5.33301H12.2631C10.8844 5.33301 9.70508 6.41834 9.70508 7.83301C9.70508 9.24767 10.8851 10.333 12.2631 10.333H13.9464C13.9891 10.333 14.0297 10.333 14.0677 10.3303C14.3511 10.3133 14.6186 10.1937 14.8203 9.99406C15.0221 9.79439 15.1444 9.52817 15.1644 9.24501C15.1671 9.20501 15.1671 9.16167 15.1671 9.12167V6.54434C15.1671 6.50434 15.1671 6.46101 15.1644 6.42101C15.1444 6.13785 15.0221 5.87163 14.8203 5.67195C14.6186 5.47227 14.3511 5.35276 14.0677 5.33567H14.0664ZM12.1144 8.49967C12.4691 8.49967 12.7564 8.20101 12.7564 7.83301C12.7564 7.46501 12.4691 7.16634 12.1144 7.16634C11.7591 7.16634 11.4717 7.46501 11.4717 7.83301C11.4717 8.20101 11.7591 8.49967 12.1144 8.49967Z' fill='%23808792'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.945 11.3333C13.9681 11.3324 13.991 11.3369 14.012 11.3465C14.0329 11.3561 14.0513 11.3706 14.0657 11.3886C14.0801 11.4067 14.09 11.4279 14.0946 11.4505C14.0992 11.4731 14.0984 11.4964 14.0923 11.5187C13.959 11.9933 13.7463 12.3987 13.4057 12.7387C12.9063 13.2387 12.2737 13.4593 11.4923 13.5647C10.7323 13.6667 9.76234 13.6667 8.53701 13.6667H7.12901C5.90367 13.6667 4.93301 13.6667 4.17367 13.5647C3.39234 13.4593 2.75967 13.238 2.26034 12.7393C1.76167 12.24 1.54034 11.6073 1.43501 10.826C1.33301 10.066 1.33301 9.096 1.33301 7.87067V7.796C1.33301 6.57067 1.33301 5.6 1.43501 4.84C1.54034 4.05867 1.76167 3.426 2.26034 2.92667C2.75967 2.428 3.39234 2.20667 4.17367 2.10133C4.93367 2 5.90367 2 7.12901 2H8.53701C9.76234 2 10.733 2 11.4923 2.102C12.2737 2.20733 12.9063 2.42867 13.4057 2.92733C13.7463 3.26867 13.959 3.67333 14.0923 4.148C14.0984 4.17025 14.0992 4.19362 14.0946 4.21621C14.09 4.23881 14.0801 4.26 14.0657 4.27805C14.0513 4.29611 14.0329 4.31053 14.012 4.32013C13.991 4.32974 13.9681 4.33426 13.945 4.33333H12.2623C10.371 4.33333 8.70434 5.82667 8.70434 7.83333C8.70434 9.84 10.371 11.3333 12.2623 11.3333H13.945ZM4.66634 10.3333C4.53373 10.3333 4.40656 10.2807 4.31279 10.1869C4.21902 10.0931 4.16634 9.96594 4.16634 9.83333V5.83333C4.16634 5.70073 4.21902 5.57355 4.31279 5.47978C4.40656 5.38601 4.53373 5.33333 4.66634 5.33333C4.79895 5.33333 4.92613 5.38601 5.01989 5.47978C5.11366 5.57355 5.16634 5.70073 5.16634 5.83333V9.83333C5.16634 9.96594 5.11366 10.0931 5.01989 10.1869C4.92613 10.2807 4.79895 10.3333 4.66634 10.3333Z' fill='%23808792'/%3E%3C/svg%3E%0A");
+}
+
+.deposit_page__country {
+    margin-top: 5px;
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.deposit_page__country span {
+    text-decoration: underline;
+}
+
+.deposit_page_form {
+    margin-top: 40px;
+}
+
+.deposit_page_label {
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+.deposit_page_method {
+    margin-top: 20px;
+}
+
+.deposit_page_method__top {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.deposit_page_method__top img {
+    max-width: 35px;
+}
+
+.deposit_page_method__name {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #A6A9B3;
+}
+
+.deposit_page_method__descr {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 9.88px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #A6A9B3;
+}
+
+.deposit_page_method__bottom {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+}
+
+.deposit_page_method__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    background: rgba(76, 82, 116, 0.21);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.deposit_page_method__item.active,
+.deposit_page_amount__item.active {
+    position: relative;
+    background: rgba(239, 18, 151, 0.21);
+    pointer-events: none;
+}
+
+.deposit_page_method__item.active::before,
+.deposit_page_amount__item.active::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    padding: 1px;
+    background: linear-gradient(45deg, #EF129736, #EF1297);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+}
+
+.deposit_page_amount__label {
+    margin-top: 40px;
+}
+
+.deposit_page_amount {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.deposit_page .deposit_page_amount input {
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    line-height: 32px;
+    max-width: 245px;
+    width: 100%;
+    color: var(--font-color);
+}
+
+.deposit_page_amount .deposit_page_promocod input {
+    width: 100%;
+    max-width: 330px;
+}
+
+.deposit_page_promocod {
+    max-width: 330px;
+    width: 100%;
+    position: relative;
+}
+
+.promo_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    padding: 4px 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ACAEBE;
+    background-color: rgba(67, 70, 92, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.deposit_page_amount__items {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.deposit_page_amount__item {
+    padding: 4px 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ACAEBE;
+    background-color: rgba(67, 70, 92, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.promo_btn:hover,
+.deposit_page_amount__item:hover {
+    background-color: rgba(67, 70, 92, 0.7);
+}
+
+.deposit_page_btns {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.deposit_page_btn__close,
+.deposit_page_submit.btn {
+    font-family: var(--font-montserrat);
+    max-width: 210px;
+    font-weight: 600;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.deposit_page_btn__close {
+    background-color: rgba(40, 43, 60, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.deposit_page_btn__close:hover {
+    background-color: rgba(40, 43, 60, 0.7);
+}
+
+.deposit_page_form .country-select .country-list .divider {
+    border-bottom: 1px solid #303241;
+}
+
+.deposit_page_form .country-select {
+    margin-top: 7px;
+    width: 100%;
+    max-width: 330px;
+}
+
+.deposit_page_form .country-select input {
+    width: 100%;
+    max-width: 330px;
+    color: var(--font-color);
+    font-size: 14px;
+    line-height: 32px;
+}
+
+@media screen and (max-width:767.98px) {
+    .deposit_page_title {
+        font-size: 22px;
+    }
+
+    .deposit_page__country {
+        font-size: 12px;
+    }
+
+    .deposit_page_method__bottom {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 17px;
+        row-gap: 10px;
+    }
+
+    .deposit_page_info__item {
+        gap: 4px;
+    }
+
+    .deposit_page_amount {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .deposit_page .deposit_page_amount input,
+    .deposit_page .deposit_page_promocod{
+        width: 100%;
+        max-width: 100%;
+    }
+    .deposit_page_amount__items{
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,161 @@
+.sign_page__wrapper {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_top {
+    text-align: center;
+}
+
+.sign_form {
+    margin: 58px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6%;
+    row-gap: 10px;
+    max-width: 590px;
+}
+
+.sign_text {
+    margin-top: 16px;
+}
+
+.sign_form label {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+}
+
+.sign_form label input {
+    margin-top: 10px;
+    width: 100%;
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 9.88px;
+    color: rgba(160, 165, 186, 0.5)
+}
+
+.sign_page .sign_form>img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sign_pomocod {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign_pomocod img {
+    width: auto;
+}
+
+.sign_pomocod__btn div {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.sign_pomocod__btn div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: rgba(55, 72, 250, 0.3);
+    filter: blur(10px);
+    z-index: 1;
+}
+
+form .sing_input_promo input {
+    margin-top: 0;
+}
+
+form .sign_checbox,
+form .sing_input_promo {
+    width: 100%;
+}
+
+form .sing_input_promo input {
+    width: 47%;
+    display: none;
+}
+
+form .sign_checbox {
+    margin-top: 5px;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+}
+
+form .sign_checbox input {
+    width: auto;
+    margin: 0 8px 0 0;
+}
+
+.sign_submit {
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+}
+
+.sign_page .sign_descr {
+    margin-top: 45px;
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.sign_form .login_other {
+    margin: 25px auto 0;
+}
+
+@media screen and (max-width:767.98px) {
+    .sign_page__wrapper{
+        margin-top: 80px;
+    }
+    .sign_page .sign_text{
+        font-size: 14px;
+    }
+    .sign_form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign_page .sign_form label{
+        width: 100%;
+        max-width: 255px;
+    }
+    .sign_page form .sing_input_promo input{
+        width: 100%;
+    }
+    form .sign_checbox{
+        justify-content: center;
+    }
+    .sign_submit {
+        max-width: 315px;
+    }
+    .sign_page .login_other span{
+        display: none;
+    }
+    .sign_page .login_create{
+        margin: 35px auto 0;
+    }
+    .sign_page .sign_pomocod{
+        align-self: start;
+        padding-left: 40px;
+    }
+    
+}

@@ -1,0 +1,213 @@
+.history__wrapper {
+    padding: 0 36px;
+    max-width: 992px;
+}
+
+.history_controls {
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.history_controls label,
+.history_controls select {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 205px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 12px 20px;
+    background: rgba(24, 26, 37, 0.5);
+    border: 1px solid rgba(48, 50, 65, 0.5);
+    border-radius: 6px;
+    color: #666873;
+    outline: none;
+}
+
+.history_controls select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 205px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(24, 26, 37, 0.5);
+    border: 1px solid rgba(48, 50, 65, 0.5);
+    border-radius: 6px;
+    color: #666873;
+    outline: none;
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--font-color);
+}
+
+.history_controls label span {
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    color: #A0A5BA;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.date_icon {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.history_controls select option,
+.history_controls input {
+    position: relative;
+    margin-top: 6px;
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    background-color: transparent;
+    border: 0;
+    color: var(--font-color);
+    outline: none;
+    z-index: 20;
+}
+
+.history_controls select option {
+    background-color: #181A25;
+}
+
+/* Transactions */
+
+
+.history_table {
+    margin-top: 25px;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 4px;
+}
+
+.history_table__heading {
+    padding: 10px 20px;
+}
+
+.history_table__heading,
+.history_table_row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 15% 15% 15% 35%;
+    grid-template-columns: 20% 15% 15% 15% 35%;
+}
+
+.history_table__heading .history_table_col {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666873;
+}
+
+.history_table_row {
+    padding: 15px 20px;
+    background: #171822;
+    border: 1px solid #303241;
+    border-radius: 8px;
+}
+
+.history_table_row .history_table_col {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.history_table_row .history_table_col:nth-child(1) {
+    color: #71A8FE;
+}
+
+.history_table_col.green {
+    color: #22D49F;
+}
+
+.history_table_col.red {
+    color: #FF5B6D;
+}
+
+/* Transactions END */
+
+
+/* Commission */
+
+.history_commission .history_table__heading,
+.history_commission .history_table_row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.commission_not_found {
+    min-height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #171822;
+    border: 1px solid #303241;
+    border-radius: 8px;
+}
+
+.commission_not_found img {
+    display: flex;
+    width: 36px;
+}
+
+.commission_not_found p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666873;
+}
+
+/* Commission END */
+
+@media screen and (max-width:979.98px) {
+    .history__wrapper {
+        padding: 0px;
+    }
+
+
+
+    .history .history_controls  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }   
+
+    .history_controls label,
+    .history_controls select {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width:767.98px) {
+    .history_table {
+        width: 900px;
+    }
+    .history .history_controls {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

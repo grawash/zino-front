@@ -1,0 +1,162 @@
+.profile__wrapper {
+    padding: 0 36px;
+}
+
+.profile_bottom {
+    margin-top: 40px;
+    max-width: 700px;
+}
+
+
+
+.profile_upload img {
+    max-width: 35px;
+}
+
+.profile_upload__text {
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    color: #666873;
+    text-align: center;
+}
+
+.profile_upload__text p {
+    margin: 0;
+}
+
+.profile_form {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.profile_form label {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.page .profile_form input {
+    margin-top: 7px;
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    color: var(--font-color);
+}
+
+.page .profile_form input::placeholder {
+    color: #A0A5BA;
+}
+
+.profile_form #phone,
+.profile_form #country {
+    width: 100%;
+}
+
+.btn_profile {
+    font-family: var(--font-montserrat);
+    width: 100%;
+    grid-column: 1/3;
+}
+
+.profile_form .iti__country-list,
+.profile_form .country-list {
+    max-width: 330px;
+    background-color: #181A25;
+    z-index: 20;
+    overflow-x: hidden;
+}
+
+/* Uploader Image */
+.image-uploader {
+    padding: 17px;
+    max-height: 125px;
+    height: 100%;
+    border: 1px solid #303241;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.profile_upload {
+    grid-column: 1/3;
+}
+.iui-cloud-upload{
+    width: 35px;
+    height: 35px;
+}
+.image-uploader .upload-text{
+    padding: 17px;
+}
+.iui-cloud-upload::before{
+    content: '';
+    display: block;
+    background-image: url('/icons/profile_download.svg');
+    width: 35px;
+    height: 35px;
+}
+.image-uploader .uploaded .uploaded-image{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+}
+.image-uploader .uploaded .uploaded-image img{
+    object-fit: contain;
+}
+.iui-close:before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url(/icons/close_icone.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.delete-image{
+    width: 20px;
+    height: 20px;
+}
+/* Uploader Image END */
+
+@media screen and (max-width:979.98px) {
+    .profile__wrapper {
+        padding: 0;
+    }
+    .profile_form{
+        margin-top: 40px;
+        column-gap: 55px;
+        row-gap: 30px;
+    }
+    .image-uploader .upload-text span{
+        text-align: center;
+        color: #666873;
+    }
+}
+@media screen and (max-width:767.98px){
+    .profile_form{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile_upload,
+    .btn_profile{
+        grid-column: 1;
+        grid-gap: 20px;
+    }
+    .profile_upload{
+        margin-bottom: 15px;
+    }
+}

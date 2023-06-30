@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/libs/countrySelect.min.css">
+    <link rel="stylesheet" href="/assets/libs/choices.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/libs/jquery-3.6.0.min.js" defer></script>
+    <script src="/assets/libs/swiper-bundle.min.js" defer></script>
+    <script src="/assets/libs/countrySelect.min.js" defer></script>
+    <script src="/assets/libs/choices.min.js" defer></script>
+    <script src="/assets/libs/simplebar.js" defer></script>
+    <script src="/assets/js/script.js" defer></script>
+    <title>Sing Up</title>
+</head>
+
+<body>
+
+    <div class="wrapper no_login">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__top">
+                <div class="header__container ">
+                    <div class="header__top__wrapper dis-f aic">
+                        <a href="#" class="header__logo"><img loading="lazy" src="./img/header_logo.png" alt="Zino"></a>
+                        <input type="text" class="header__search" placeholder="Search games">
+                        <a href="#" class="header__promotions">
+                            <div class="header__promotions__img">
+                                <img loading="lazy" src="./icons/promotions.svg" alt="promotions">
+                            </div>
+                            Promotions and bonuses
+                        </a>
+                        <div class="header__language dis-f aic">
+                            <div class="header__language_flag"><img loading="lazy" src="/icons/en-En.svg" alt=""></div>
+                            <div class="header__language_current">EN</div>
+                            <div class="header__language_btn"><svg width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6 8.37498L0 2.37498L1.4 0.974976L6 5.57498L10.6 0.974976L12 2.37498L6 8.37498Z"
+                                        fill="white" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <!-- No Login -->
+
+                        <button class="header__signin">Sign In</button>
+                        <button class="btn-green header__signup">Sign Up</button>
+                        <!-- No Login END -->
+                        <div class="mobile_search">
+                            <img src="icons/search.svg" alt="">
+                        </div>
+                        <div class="mobile_burger ">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header__bottom header__bottom_nologin">
+                <nav class="header__container dis-f aic">
+                    <ul class="header__bottom__items list-reset dis-f aic">
+                        <li class="header__bottom__item"><a href="#"><svg width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.22592 8.49791L9.49549 6.7961L9.50657 4.37632L6.38283 2.07617C5.37857 2.53551 4.46417 3.18311 3.69238 3.99162L4.83845 7.67591L7.22592 8.49791Z"
+                                        fill="none" />
+                                    <path
+                                        d="M7.9082 9.269L8.65222 11.5347H11.3845L12.1616 9.31614L9.99951 7.7002L7.9082 9.269Z"
+                                        fill="none" />
+                                    <path
+                                        d="M13.1764 9.5266L12.3203 11.9689L13.7225 14.2647L17.5874 14.283C17.845 13.8271 18.0748 13.3498 18.2513 12.8371C18.4537 12.2494 18.6216 11.6546 18.6946 11.0608L15.5191 8.77844L13.1764 9.5266Z"
+                                        fill="none" />
+                                    <path
+                                        d="M10.5215 6.80777L12.8551 8.55217L15.2108 7.80001L16.4468 4.12093C15.6789 3.2761 14.7369 2.57308 13.6508 2.07422L10.5327 4.35607L10.5215 6.80777Z"
+                                        fill="none" />
+                                    <path
+                                        d="M2.90948 4.93164C2.43172 5.59955 2.03795 6.34316 1.75714 7.15821C1.4766 7.97326 1.28498 8.8018 1.25 9.62219L3.82348 7.86965L2.90948 4.93164Z"
+                                        fill="none" />
+                                    <path
+                                        d="M7.74227 12.0509L6.89504 9.46943L4.5041 8.64636L1.28809 10.8441C1.40866 12.0584 1.82687 13.226 2.41893 14.2768L6.2477 14.2617L7.74227 12.0509Z"
+                                        fill="none" />
+                                    <path
+                                        d="M12.9082 18.2001C14.4785 17.6422 15.8857 16.6545 16.9222 15.3063L13.837 15.2919L12.9082 18.2001Z"
+                                        fill="none" />
+                                    <path
+                                        d="M8.63562 12.5605L7.08496 14.8545L8.2572 18.536C8.83751 18.6551 9.41969 18.7517 9.99639 18.7517C10.5842 18.7517 11.1602 18.6399 11.7277 18.524L12.8926 14.8752L11.479 12.5605H8.63562Z"
+                                        fill="none" />
+                                    <path
+                                        d="M12.4937 1.64965C10.6639 1.10379 9.25763 1.13103 7.52832 1.64631L10.0054 3.47056L12.4937 1.64965Z"
+                                        fill="none" />
+                                    <path
+                                        d="M3.08691 15.3002C4.07555 16.5941 5.43526 17.6235 7.07658 18.2087L6.1467 15.2882L3.08691 15.3002Z"
+                                        fill="none" />
+                                    <path
+                                        d="M18.7501 9.83307C18.7159 8.12686 18.1454 6.48287 17.2024 5.09485L16.2197 8.01964L18.7501 9.83307Z"
+                                        fill="none" />
+                                </svg>
+                                <span>Sport</span></a></li>
+                        <li class="header__bottom__item"><a href="#"><svg width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.80371 14.3066C8.66679 14.3066 8.53803 14.36 8.4412 14.4568C8.34437 14.5537 8.29102 14.6824 8.29102 14.8193C8.29102 14.9563 8.34437 15.085 8.4412 15.1819C8.53803 15.2787 8.66679 15.3321 8.80371 15.3321C8.94067 15.3321 9.06939 15.2787 9.16625 15.1819C9.36617 14.982 9.36617 14.6567 9.16625 14.4568C9.06939 14.36 8.94067 14.3066 8.80371 14.3066Z"
+                                        fill="none" />
+                                    <path
+                                        d="M11.1963 7.26562H2.78809C1.93999 7.26562 1.25 7.95561 1.25 8.80371V17.2119C1.25 18.06 1.93999 18.75 2.78809 18.75H11.1963C12.0444 18.75 12.7344 18.06 12.7344 17.2119V8.80371C12.7344 7.95561 12.0444 7.26562 11.1963 7.26562ZM6.26823 12.2839C5.9777 12.5744 5.59147 12.7344 5.18063 12.7344C4.76979 12.7344 4.38356 12.5743 4.09303 12.2839C3.49335 11.6841 3.49335 10.7084 4.09303 10.1087C4.38353 9.81816 4.76976 9.65813 5.1806 9.65813C5.59144 9.65813 5.97767 9.81816 6.26819 10.1087C6.86794 10.7084 6.86794 11.6841 6.26823 12.2839ZM9.89131 15.9069C9.60078 16.1974 9.21455 16.3575 8.80371 16.3575C8.39287 16.3575 8.00664 16.1974 7.71611 15.9069C7.11643 15.3072 7.11643 14.3315 7.71611 13.7317C8.00664 13.4413 8.39287 13.2812 8.80371 13.2812C9.21455 13.2812 9.60078 13.4412 9.89131 13.7318C10.491 14.3315 10.491 15.3072 9.89131 15.9069Z"
+                                        fill="none" />
+                                    <path
+                                        d="M5.18042 10.6835C5.04349 10.6835 4.91474 10.7368 4.81791 10.8337C4.61799 11.0336 4.61799 11.3588 4.81791 11.5587C4.91474 11.6556 5.04349 11.7089 5.18042 11.7089C5.31737 11.7089 5.44609 11.6556 5.54296 11.5587C5.63976 11.4619 5.69311 11.3331 5.69311 11.1962C5.69311 11.0592 5.63976 10.9305 5.54293 10.8337C5.44609 10.7368 5.31734 10.6835 5.18042 10.6835Z"
+                                        fill="none" />
+                                    <path
+                                        d="M15.1609 4.32617C15.024 4.32617 14.8952 4.37953 14.7984 4.47636C14.5985 4.67627 14.5985 5.00153 14.7984 5.20145C14.8952 5.29828 15.024 5.35163 15.1609 5.35163C15.2978 5.35163 15.4266 5.29828 15.5234 5.20145C15.6202 5.10458 15.6736 4.97583 15.6736 4.83887C15.6736 4.70194 15.6202 4.57319 15.5234 4.47636C15.4266 4.37953 15.2978 4.32617 15.1609 4.32617Z"
+                                        fill="none" />
+                                    <path
+                                        d="M11.217 5.20141C11.417 5.00149 11.417 4.67624 11.217 4.47632C11.1202 4.37953 10.9915 4.32617 10.8545 4.32617C10.7176 4.32617 10.5888 4.37953 10.492 4.47636C10.3952 4.57319 10.3418 4.70194 10.3418 4.83887C10.3418 4.97583 10.3952 5.10458 10.492 5.20141C10.5888 5.29824 10.7176 5.3516 10.8545 5.3516C10.9915 5.3516 11.1202 5.29824 11.217 5.20141Z"
+                                        fill="none" />
+                                    <path
+                                        d="M15.5234 9.50799C15.6203 9.41116 15.6736 9.28241 15.6736 9.14548C15.6736 9.00853 15.6203 8.87977 15.5234 8.78294C15.3235 8.58309 14.9983 8.58309 14.7984 8.78294C14.5985 8.98286 14.5985 9.30811 14.7984 9.50803C14.8952 9.60486 15.024 9.65821 15.1609 9.65821C15.2978 9.65818 15.4266 9.60482 15.5234 9.50799Z"
+                                        fill="none" />
+                                    <path
+                                        d="M17.2119 1.25H8.80371C7.95561 1.25 7.26562 1.93999 7.26562 2.78809V6.24023H10.2195C10.0532 6.16477 9.89992 6.05949 9.76689 5.92647C9.16721 5.32675 9.16721 4.35099 9.76689 3.75127C10.0574 3.46081 10.4437 3.30078 10.8545 3.30078C11.2653 3.30078 11.6516 3.46078 11.9421 3.7513C12.5418 4.35102 12.5418 5.32678 11.9421 5.9265C11.801 6.06752 11.6373 6.17752 11.4592 6.25367C12.6638 6.37695 13.6241 7.33774 13.7465 8.54258C13.8214 8.36642 13.9301 8.20133 14.0735 8.05791C14.6732 7.45823 15.649 7.45826 16.2487 8.05788C16.8484 8.65763 16.8484 9.63339 16.2487 10.2331C15.9582 10.5236 15.5719 10.6836 15.1611 10.6836C14.7503 10.6836 14.364 10.5236 14.0735 10.2331C13.9384 10.098 13.834 9.94364 13.7597 9.77893V12.7344H17.2119C18.06 12.7344 18.75 12.0444 18.75 11.1963V2.78809C18.75 1.93999 18.06 1.25 17.2119 1.25ZM16.2487 5.92647C15.9582 6.21696 15.5719 6.37699 15.1611 6.37699C14.7503 6.37699 14.364 6.21696 14.0735 5.92647C13.4738 5.32675 13.4738 4.35099 14.0735 3.75127C14.364 3.46081 14.7503 3.30078 15.1611 3.30078C15.572 3.30078 15.9582 3.46078 16.2487 3.7513C16.8484 4.35102 16.8484 5.32675 16.2487 5.92647Z"
+                                        fill="none" />
+                                </svg>
+                                <span>Casino</span></a></li>
+                        <li class="header__bottom__item"><a href="#">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_372_3288)">
+                                        <path
+                                            d="M9.5127 0.25V2.36094C10.9649 2.47233 12.2868 3.04836 13.3309 3.94415L14.7804 2.49462C13.3603 1.23133 11.5293 0.368159 9.5127 0.25V0.25Z"
+                                            fill="none" />
+                                        <path
+                                            d="M8.48744 0.25C6.47083 0.368159 4.63983 1.23133 3.21973 2.49462L4.66925 3.94415C5.71338 3.04836 7.03521 2.47233 8.48744 2.36094V0.25Z"
+                                            fill="none" />
+                                        <path
+                                            d="M2.36094 8.48732C2.47233 7.03509 3.04836 5.71326 3.94415 4.66913L2.49462 3.2196C1.23133 4.6397 0.368159 6.47071 0.25 8.48732H2.36094Z"
+                                            fill="none" />
+                                        <path
+                                            d="M8.99939 6.64844L7.18694 8.46089C6.98716 8.66115 6.98716 8.98609 7.18694 9.18639C7.3817 9.38114 7.71817 9.38015 7.91193 9.18639L8.99939 8.09889L10.0869 9.18635C10.2816 9.38012 10.6186 9.38012 10.8113 9.18635C11.0116 8.98609 11.0116 8.66115 10.8118 8.46085L8.99939 6.64844Z"
+                                            fill="none" />
+                                        <path
+                                            d="M9.00001 3.36035C5.8903 3.36035 3.36035 5.8903 3.36035 9.00001C3.36035 12.1097 5.8903 14.6397 9.00001 14.6397C12.1097 14.6397 14.6397 12.1097 14.6397 9.00001C14.6397 5.8903 12.1097 3.36035 9.00001 3.36035ZM11.5374 9.91175C11.0066 10.4435 10.1501 10.5303 9.5127 10.0352V11.5635H10.5381V12.5889H7.46192V11.5635H8.48731V10.0093C7.89412 10.4668 6.99909 10.4488 6.46206 9.91175C5.86275 9.31193 5.86275 8.3361 6.46257 7.73631L9.00001 5.19885L11.5374 7.73628C12.1373 8.3361 12.1373 9.31193 11.5374 9.91175Z"
+                                            fill="none" />
+                                        <path
+                                            d="M13.3309 14.0559C12.2868 14.9517 10.9649 15.5277 9.5127 15.6391V17.7501C11.5293 17.6319 13.3603 16.7687 14.7804 15.5054L13.3309 14.0559Z"
+                                            fill="none" />
+                                        <path
+                                            d="M14.0557 13.3309L15.5052 14.7804C16.7685 13.3603 17.6317 11.5293 17.7498 9.5127H15.6389C15.5275 10.9649 14.9514 12.2868 14.0557 13.3309Z"
+                                            fill="none" />
+                                        <path
+                                            d="M14.0557 4.66913C14.9514 5.71322 15.5275 7.03509 15.6389 8.48732H17.7498C17.6317 6.47071 16.7685 4.6397 15.5052 3.2196L14.0557 4.66913Z"
+                                            fill="none" />
+                                        <path
+                                            d="M3.94415 13.3309C3.04836 12.2868 2.47233 10.9649 2.36094 9.5127H0.25C0.368159 11.5293 1.23133 13.3603 2.49462 14.7804L3.94415 13.3309Z"
+                                            fill="none" />
+                                        <path
+                                            d="M3.21973 15.5054C4.63983 16.7687 6.47083 17.6319 8.48744 17.7501V15.6391C7.03521 15.5277 5.71338 14.9517 4.66925 14.0559L3.21973 15.5054Z"
+                                            fill="none" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_372_3288">
+                                            <rect width="17.5" height="17.5" fill="white"
+                                                transform="translate(0.25 0.25)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Tournaments</span></a></li>
+                        <li class="header__bottom__item"><a href="#"><svg width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.99985 12V10H6.99985V12H4.99985ZM14.9999 4.494C14.9983 4.09722 14.8395 3.71722 14.5584 3.43722C14.2773 3.15721 13.8966 3 13.4999 3H3.42285C3.02503 3 2.6435 3.15804 2.36219 3.43934C2.08089 3.72064 1.92285 4.10218 1.92285 4.5V13.5C1.92285 14.163 2.18624 14.7989 2.65508 15.2678C3.12393 15.7366 3.75981 16 4.42285 16H15.5769C16.2399 16 16.8758 15.7366 17.3446 15.2678C17.8135 14.7989 18.0769 14.163 18.0769 13.5V7.5C18.0769 7.10218 17.9188 6.72064 17.6375 6.43934C17.3562 6.15804 16.9747 6 16.5769 6H15.9999V13.23C15.9999 13.3626 15.9472 13.4898 15.8534 13.5836C15.7596 13.6773 15.6325 13.73 15.4999 13.73C15.3672 13.73 15.2401 13.6773 15.1463 13.5836C15.0525 13.4898 14.9999 13.3626 14.9999 13.23V4.494ZM3.99985 6.5C3.99985 6.36739 4.05253 6.24021 4.1463 6.14645C4.24007 6.05268 4.36724 6 4.49985 6H12.4999C12.6325 6 12.7596 6.05268 12.8534 6.14645C12.9472 6.24021 12.9999 6.36739 12.9999 6.5C12.9999 6.63261 12.9472 6.75979 12.8534 6.85355C12.7596 6.94732 12.6325 7 12.4999 7H4.49985C4.36724 7 4.24007 6.94732 4.1463 6.85355C4.05253 6.75979 3.99985 6.63261 3.99985 6.5ZM9.49985 9H12.4999C12.6325 9 12.7596 9.05268 12.8534 9.14645C12.9472 9.24021 12.9999 9.36739 12.9999 9.5C12.9999 9.63261 12.9472 9.75979 12.8534 9.85355C12.7596 9.94732 12.6325 10 12.4999 10H9.49985C9.36724 10 9.24007 9.94732 9.1463 9.85355C9.05253 9.75979 8.99985 9.63261 8.99985 9.5C8.99985 9.36739 9.05253 9.24021 9.1463 9.14645C9.24007 9.05268 9.36724 9 9.49985 9ZM8.99985 12.5C8.99985 12.3674 9.05253 12.2402 9.1463 12.1464C9.24007 12.0527 9.36724 12 9.49985 12H12.4999C12.6325 12 12.7596 12.0527 12.8534 12.1464C12.9472 12.2402 12.9999 12.3674 12.9999 12.5C12.9999 12.6326 12.9472 12.7598 12.8534 12.8536C12.7596 12.9473 12.6325 13 12.4999 13H9.49985C9.36724 13 9.24007 12.9473 9.1463 12.8536C9.05253 12.7598 8.99985 12.6326 8.99985 12.5ZM4.49985 9H7.49985C7.63246 9 7.75964 9.05268 7.8534 9.14645C7.94717 9.24021 7.99985 9.36739 7.99985 9.5V12.5C7.99985 12.6326 7.94717 12.7598 7.8534 12.8536C7.75964 12.9473 7.63246 13 7.49985 13H4.49985C4.36724 13 4.24007 12.9473 4.1463 12.8536C4.05253 12.7598 3.99985 12.6326 3.99985 12.5V9.5C3.99985 9.36739 4.05253 9.24021 4.1463 9.14645C4.24007 9.05268 4.36724 9 4.49985 9Z"
+                                        fill="none" />
+                                </svg>
+                                <span>News</span></a></li>
+                        <li class="header__bottom__item">
+                            <a href="#" class="header__promotions">
+                                Promotions and bonuses
+                            </a>
+                        </li>
+                        <div class="mobile_bottom">
+                            <div class="header__language dis-f aic">
+                                <div class="header__language_flag"><img loading="lazy" src="/icons/en-En.svg" alt="">
+                                </div>
+                                <div class="header__language_current">EN</div>
+                                <div class="header__language_btn"><svg width="12" height="9" viewBox="0 0 12 9"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6 8.37498L0 2.37498L1.4 0.974976L6 5.57498L10.6 0.974976L12 2.37498L6 8.37498Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <div class="mobile_support">
+                                Support
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <!-- Header END -->
+        <main class="page page-wrapper">
+            <div class="sign_page">
+                <div class="sign_page__container">
+                    <div class="sign_page__wrapper">
+                        <div class="sign_top">
+                            <div class="sign_title">
+                                Sign up
+                            </div>
+                            <div class="sign_text">
+                                We need you to help us with some basic information to create your account.
+                            </div>
+                        </div>
+                        <form action="#" class="sign_form">
+                            <label for="">Username
+                                <input type="text" placeholder="Username">
+                            </label>
+                            <label for="">Email or phone number
+                                <input type="text" placeholder="Email or phone number">
+                            </label>
+                            <label for="">Password
+                                <input type="password" placeholder="Password">
+                            </label>
+                            <label for="">Confirm password
+                                <input type="password" placeholder="Confirm password">
+                            </label>
+                            <div class="sign_pomocod">
+                                Promocode <div class="sign_pomocod__btn">
+                                    <div>
+                                        <img src="/icons/sign_promocode_icone.svg" alt="" aria-hidden="true">
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="" class="sing_input_promo">
+                                <input type="text" placeholder="Promocode">
+                            </label>
+                            <img src="/img/login_fer.jpg" alt="">
+                            <label for="" class="sign_checbox">
+                                <input type="checkbox" name="policy"> <span>I agree to all the <a href="#">Terms</a> and <a
+                                        href="#">Privacy policy </a></span>
+                            </label>
+                            <label for="" class="sign_checbox">
+                                <input type="checkbox" name="confirm"> I confirm that i am 18 years old or over
+                            </label>
+                            <button type="submit" class="btn-green sign_submit">Register</button>
+                            <div class="sign_descr">
+                                By clicking the button, I accept the <a href="#">Terms of Use of the service</a> and its <a
+                                    href="#">Privacy Policy</a>, as well as
+                                consent to the processing of personal data
+                            </div>
+                            <div class="login_other">
+                                <span>or</span>
+                                <div class="login_other__items">
+                                    <a href="#" class="login_btn_other">Continue with facebook</a>
+                                    <a href="#" class="login_btn_other">Continue with Google</a>
+                                </div>
+                            </div>
+                            <div class="login_create">
+                                Already have an account? <a href="#">Log in</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer_top dis-f jcsb">
+                    <a href="#" class="footer_logo"><img loading="lazy" src="/img/footer_logo.png" alt="Zino"></a>
+                    <div class="footer_top__left dis-f aic">
+                        <ul class="footer_socials list-reset dis-f aic">
+                            <a href="#"><img loading="lazy" src="/icons/youtube.svg" alt="youtube"></a>
+                            <a href="#"><img loading="lazy" src="/icons/twitter.svg" alt="twitter"></a>
+                            <a href="#"><img loading="lazy" src="/icons/facebook.svg" alt="facebook"></a>
+                        </ul>
+                        <a href="#" class="footer_top__btn btn-blue btn"><img loading="lazy" src="/icons/phone.svg"
+                                alt="phone">
+                            02-508-8798</a>
+                    </div>
+                    <div class="footer_top__right">
+                        <img loading="lazy" src="/icons/footer_defens.png" alt="defens"
+                            class="footer_defens footer_defens_tablet">
+                        <img loading="lazy" src="/icons/footer_secure.png" alt="secure"
+                            class="footer_secure footer_secure_tablet">
+                        <img loading="lazy" src="/img/footer_center_image.png" alt="Image"
+                            class="footer_center__image footer_center__image__tablet">
+                    </div>
+
+                </div>
+                <div class="footer_center ">
+                    <div class="footer_center__top dis-f jcsb">
+                        <div class="footer_menu dis-f">
+                            <ul class="footer_center__items list-reset">
+                                <li>About Us</li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#"> Why choose zino</a></li>
+                                <li><a href="#"> Referral program</a></li>
+                                <li><a href="#"> Bonuses</a></li>
+                                <li><a href="#"> Terms and conditions</a></li>
+                                <li><a href="#"> Privacy Policy</a></li>
+                                <li><a href="#"> Resposible gaming</a></li>
+                                <li><a href="#"> AFFILIATE</a></li>
+                            </ul>
+                            <ul class="footer_center__items list-reset">
+                                <li>Help</li>
+                                <li><a href="#">F.A.Q (Frequently Asked Questions)</a></li>
+                                <li><a href="#"> AML/KYC Policy</a></li>
+                                <li><a href="#"> Refund Policy</a></li>
+                            </ul>
+                            <ul class="footer_center__items list-reset">
+                                <li>Our Products</li>
+                                <li><a href="#">Extra bonuses</a></li>
+                                <li><a href="#"> Games</a></li>
+                                <li><a href="#"> Live Casino</a></li>
+                                <li><a href="#"> Lottery</a></li>
+                            </ul>
+                            <ul class="footer_center__items list-reset">
+                                <li>Contact Us</li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#"> Live Chat</a></li>
+                                <li><a href="#"> Support ticket</a></li>
+                                <li><a href="#"> Telegram link</a></li>
+                            </ul>
+                        </div>
+                        <img loading="lazy" src="/img/footer_center_image.png" alt="Image" class="footer_center__image">
+                    </div>
+                    <a href="#" class="footer_logo_tablet"><img loading="lazy" src="/img/footer_logo.png"
+                            alt="Zino"></a>
+
+                    <div class="footer_center__bottom dis-f aic">
+                        <img loading="lazy" src="/icons/footer_defens.png" alt="defens" class="footer_defens">
+                        <img loading="lazy" src="/icons/footer_secure.png" alt="secure" class="footer_secure">
+                        <div class="footer_attention">Attention! It is gambling advertising. Gambling is not suitable
+                            for solving financial problems. Please read terms and conditions and play responsibly.</div>
+                    </div>
+                    <div class="footer_rules">
+                        Goldenbet is owned and operated by Santeda International B.V. (registration number: 151296;
+                        registered in Curacao) operating through its payment agent SANTEDA INTERNATIONAL
+                        LIMITED(registration number: HE406761; registered in Cyprus with actual address: Patrikiou
+                        Loumoumpa, 7, Block A, Flat A13, 7560 Pervolia, Larnaca, Cyprus).Santeda International B.V. is a
+                        company registered and established under the laws of Curacao and licensed and regulated by the
+                        Government of Curaçao under the gaming license No. 1668/JAZ issued to Curaçao eGaming,
+                        authorized and regulated by the Government of Curacao with registered address: Pareraweg 45,
+                        Curacao.
+                    </div>
+                </div>
+                <div class="footer_bottom dis-f jcsb aic">
+                    <div class="footer_bottom__copy">
+                        All Rights Reserved © ZinoGame 2023. Top Online Casino Games
+                    </div>
+                    <div class="footer_bottom__crypto dis-f ">
+                        <img loading="lazy" src="/icons/crypto_1.png" alt="crypto">
+                        <img loading="lazy" src="/icons/crypto_2.png" alt="crypto">
+                        <img loading="lazy" src="/icons/crypto_3.png" alt="crypto">
+                        <img loading="lazy" src="/icons/crypto_4.png" alt="crypto">
+                        <img loading="lazy" src="/icons/crypto_5.png" alt="crypto">
+                        <img loading="lazy" src="/icons/crypto_6.png" alt="crypto">
+                        <img loading="lazy" src="/icons/crypto_7.png" alt="crypto">
+                        <img loading="lazy" src="/icons/crypto_8.png" alt="crypto">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
