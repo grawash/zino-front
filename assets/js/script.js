@@ -21,48 +21,51 @@ jQuery(document).ready(function ($) {
   })
 
   // Mobile menu
-  if ($(window).width() < 980) {
-    $('.mobile_burger').on('click', function () {
-      $(this).toggleClass('active')
-      $('body').toggleClass('overflow')
-      $('.header__user_menu').toggleClass('active')
-      $('.header__bottom_nologin').toggleClass('active')
-      if ($(window).width() < 980) {
-        $('.header__notifications').removeClass('active')
-        $('.notifications_menu').fadeOut(300)
-        $('.header__favourite').removeClass('active')
-        $('body').removeClass('favourite_open')
-        $('.favourite_menu').fadeOut(300)
-      }
-    })
+  // if ($(window).width() < 980) {
+  //   $('.mobile_burger').on('click', function () {
+  //     $(this).toggleClass('active')
+  //     $('body').toggleClass('overflow')
+  //     $('.header__user_menu').toggleClass('active')
+  //     $('.header__bottom_nologin').toggleClass('active')
+  //     if ($(window).width() < 980) {
+  //       $('.header__notifications').removeClass('active')
+  //       $('.notifications_menu').fadeOut(300)
+  //       $('.header__favourite').removeClass('active')
+  //       $('body').removeClass('favourite_open')
+  //       $('.favourite_menu').fadeOut(300)
+  //     }
+  //   })
 
-  }
-  (function() {
-    window.onresize = avtivateMobileBurger;
-    window.onload = avtivateMobileBurger;
-    function avtivateMobileBurger(){
-      if ($(window).width() < 980) {
-        $('.mobile_burger').on('click', function () {
-          $(this).toggleClass('active')
-          $('body').toggleClass('overflow')
-          $('.header__user_menu').toggleClass('active')
-          $('.header__bottom_nologin').toggleClass('active')
-          if ($(window).width() < 980) {
-            $('.header__notifications').removeClass('active')
-            $('.notifications_menu').fadeOut(300)
-            $('.header__favourite').removeClass('active')
-            $('body').removeClass('favourite_open')
-            $('.favourite_menu').fadeOut(300)
-          }
-        })
-    
-      }
-
+  // }
+  function setupMobileBurgerClickListener() {
+    console.log('aaa');
+    $('.mobile_burger').off('click');
+    if ($(window).width() < 980) {
+      $('.mobile_burger').on('click', function () {
+        $(this).toggleClass('active');
+        $('body').toggleClass('overflow');
+        $('.header__user_menu').toggleClass('active');
+        $('.header__bottom_nologin').toggleClass('active');
+        if ($(window).width() < 980) {
+          $('.header__notifications').removeClass('active');
+          $('.notifications_menu').fadeOut(300);
+          $('.header__favourite').removeClass('active');
+          $('body').removeClass('favourite_open');
+          $('.favourite_menu').fadeOut(300);
+        }
+      });
+    } else {
+      $('.mobile_burger').off('click'); // Remove the click listener if screen size is larger than 980
     }
+  }
+  $(document).ready(function () {
+    setupMobileBurgerClickListener();
+  });
   
-  
-  })();
-
+  // Call the function when the window is resized
+  $(window).resize(function () {
+    setupMobileBurgerClickListener();
+  });
 
   // Deposit Form
   let depItems = $('.deposit_method__item')
